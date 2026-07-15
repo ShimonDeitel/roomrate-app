@@ -18,9 +18,9 @@ struct ContentView: View {
                             Text(entry.hotelName).font(Theme.headlineFont)
                             Text(entry.roomNumber).font(Theme.bodyFont).foregroundColor(.secondary)
                             HStack {
-                                Text("\(entry.comfort, specifier: \"%.1f\") /5")
+                                Text("\(entry.comfort, specifier: "%.1f") /5")
                                 Spacer()
-                                Text("\(entry.noise, specifier: \"%.1f\")")
+                                Text("\(entry.noise, specifier: "%.1f")")
                             }
                             .font(.caption)
                             .foregroundColor(Theme.accent)
